@@ -1,0 +1,217 @@
+{
+	"info": {
+		"_postman_id": "f1826e9f-54b3-431b-abbd-1e177ab58249",
+		"name": "tasks",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25376034"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/api/v1/tasks",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiVVNFUiIsInN1YiI6ImpvaG4uZG9lQGV4YW1wbGUuY29tIiwiaWF0IjoxNzQxMzYxNzU5LCJleHAiOjE3NDEzNjUzNTksImp0aSI6IjM2MDNhZWY4LTc1ZTktNGFjMS1iYmMzLTkxZjRiYTMzMTY1YSJ9.b15xGzAImKP5WqJ9LRAD2AvlJ_1witiqRsjhFI6W3d8",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/tasks",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"tasks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/v1/tasks",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiVVNFUiIsInN1YiI6InJhbTEuc2luZ2gyQGV4YW1wbGUuY29tIiwiaWF0IjoxNzQxMzcxNjI0LCJleHAiOjE3NDEzNzUyMjQsImp0aSI6IjNiMDJiODcyLWQ0ZDctNDE4Zi1hMGU0LTMzZjM1NWZkMmE3MiJ9.AMT6rbvv-Gwmaal-DhyPDcJgkb-RrXvbQJoH7pvvhFg",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/tasks",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"tasks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/v1/tasks",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiVVNFUiIsInN1YiI6InJhbTEuc2luZ2gyQGV4YW1wbGUuY29tIiwiaWF0IjoxNzQxMzcxNjI0LCJleHAiOjE3NDEzNzUyMjQsImp0aSI6IjNiMDJiODcyLWQ0ZDctNDE4Zi1hMGU0LTMzZjM1NWZkMmE3MiJ9.AMT6rbvv-Gwmaal-DhyPDcJgkb-RrXvbQJoH7pvvhFg",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"title\": \"Task Example\",\n  \"description\": \"This is a description of the task.\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/tasks",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"tasks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/v1/profile/myProfile",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiVVNFUiIsInN1YiI6InJhbTEuc2luZ2gyQGV4YW1wbGUuY29tIiwiaWF0IjoxNzQxMzcxNjI0LCJleHAiOjE3NDEzNzUyMjQsImp0aSI6IjNiMDJiODcyLWQ0ZDctNDE4Zi1hMGU0LTMzZjM1NWZkMmE3MiJ9.AMT6rbvv-Gwmaal-DhyPDcJgkb-RrXvbQJoH7pvvhFg",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"hitesh.pant@example.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/profile/myProfile",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"profile",
+						"myProfile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/v1/auth/login",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\n  \"email\": \"ram1.singh2@example.com\",\n  \"password\": \"Password1234567890\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/auth/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/v1/auth/register",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"firstName\": \"Ram\",\n  \"lastName\": \"Singh\",\n  \"email\": \"ram1.singh2@example.com\",\n  \"password\": \"Password1234567890\",\n  \"phoneNumber\": \"+1238567890101\",\n  \"role\": \"USER\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/auth/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"auth",
+						"register"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
